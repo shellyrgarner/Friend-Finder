@@ -9,10 +9,10 @@ module.exports = function(app) {
          res.json(friendsData);
     });
 
-    app.post('/api/friends', function(req,res) {
+    app.post('/api/friends', function(req, res) {
         surveyData.push(req.body);
-        res.json(true);
-        console.log("response", response);
+        res.json(surveyData);
+        // console.log("response: ", response);
     })
         
 }
