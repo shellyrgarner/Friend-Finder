@@ -13,7 +13,7 @@ module.exports = function(app) {
 
         var surveyData = req.body;
         // console.log("surveydata: " + surveyData);
-        console.log("surveydata:" + JSON.stringify(surveyData));
+        // console.log("surveydata:" + JSON.stringify(surveyData));
 
         var surveyScore = surveyData.scores;
         console.log("scores: " + surveyScore);
@@ -28,8 +28,9 @@ module.exports = function(app) {
 
         for (var i=0; i<friendsData.length; i++) {
             // console.log("friendsData: " + JSON.stringify(friends[i]));
+            totalDiff = 0;
 
-            for (var k=0; k<surveyScore.length; k++) {
+            for (var k=0; k<friendsData[i].scores[k]; k++) {
                 totalDiff += Math.abs(parseInt(friendsData[i].scores[k]) - parseInt(surveyScore[k]));
 
                 if (totalDiff <= closestMatch.matchDiff) {
@@ -37,8 +38,12 @@ module.exports = function(app) {
                     closestMatch.matchPhoto = friendsData[i].photo;
                     closestMatch.matchDiff = totalDiff;
                 }
+               
             }
             console.log("diff: " + totalDiff);
+            //  console.log("surveyscore: " + surveyScore[k])
+                console.log("friendsscore: " + friendsData[i].scores);
+            
         };
 
         friendsData.push(surveyData);

@@ -213,13 +213,13 @@
     <div class="modal fade" id="modal" role="dialog">
         <div class="modal-content">
             <div class="modal-header" style="padding:35px 50px;">
-                    <h4>Closest Match!</h4>
+                    <h4><strong>Closest Match!</strong></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 
             </div>
             <div class="modal-body" style="padding:40px 50px;">
-                <p id="matchUser"></p>
-                <img id="matchUserImg" src=""> 
+                <h4 id="matchName"></h4>
+                <img id="matchPhoto" src="" alt"img"> 
             </div>
             <div class="modal-footer">
                 <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -250,12 +250,19 @@
                     ]
             };
 
-            console.log(surveyData);
+            console.log(surveyData.name);
+            console.log(surveyData.photo);
+
+           
 
      $.post('/api/friends', surveyData, function(data) {
 
-         $('#matchUser').text(data.name);
-         $('#matchUserImg').attr("src", data.photo);
+         console.log(data);
+
+         $('#matchName').html(data.matchName);
+         console.log("match name: " + data.matchName);
+         $('#matchPhoto').attr("src", data.matchPhoto);
+         console.log("match photo: " + data.matchPhoto);
 
          $("#modal").modal("toggle");
 
