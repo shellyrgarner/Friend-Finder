@@ -1,3 +1,5 @@
+var path = require("path");
+
 var friendsData = require("../../app/data/friends");
 var surveyData = [];
 
