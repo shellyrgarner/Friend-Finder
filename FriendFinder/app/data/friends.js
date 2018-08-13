@@ -1,5 +1,5 @@
 
-var surveyArray = [
+var friendsData = [
     {
         "name":"John",
         "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -15,9 +15,25 @@ var surveyArray = [
             4,
             1
           ]
-      }
+      },
+      {
+        "name":"JDoe",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+      },
 ];
 
-module.exports = surveyArray;
+module.exports = friendsData;
 
   
