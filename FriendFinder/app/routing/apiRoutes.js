@@ -26,27 +26,27 @@ module.exports = function(app) {
 
         var totalDiff = 0;
 
-        for (var i=0; i<friendsData.length; i++) {
+        for (var i=0; i<friends.length; i++) {
             // console.log("friendsData: " + JSON.stringify(friends[i]));
             totalDiff = 0;
 
-            for (var k=0; k<friendsData[i].scores[k]; k++) {
-                totalDiff += Math.abs(parseInt(friendsData[i].scores[k]) - parseInt(surveyScore[k]));
+            for (var k=0; k<friends[i].scores[k]; k++) {
+                totalDiff += Math.abs(parseInt(friends[i].scores[k]) - parseInt(surveyScore[k]));
 
                 if (totalDiff <= closestMatch.matchDiff) {
-                    closestMatch.matchName = friendsData[i].name;
-                    closestMatch.matchPhoto = friendsData[i].photo;
+                    closestMatch.matchName = friends[i].name;
+                    closestMatch.matchPhoto = friends[i].photo;
                     closestMatch.matchDiff = totalDiff;
                 }
                
             }
             console.log("diff: " + totalDiff);
             //  console.log("surveyscore: " + surveyScore[k])
-                console.log("friendsscore: " + friendsData[i].scores);
+                console.log("friendsscore: " + friends[i].scores);
             
         };
 
-        friendsData.push(surveyData);
+        friends.push(surveyData);
 
         res.json(closestMatch);
          
