@@ -8,17 +8,17 @@
 
 >A modal popup is used to display the display both the name and picture of the closest match.
 
->Files Created
-    >data
+>Files Created:
+    >data:
        *friends.js - holds friend data in an array 
-    >public
+    >public:
        *home.html
        *survey.html
-    >routing
+    >routing:
        *apiRoutes.js - GET/POST routes - handles compatibility logic
        *htmlRoutes.js
 
->Packages Used
+>Packages Used:
     *express
     *body-parser
     *path
