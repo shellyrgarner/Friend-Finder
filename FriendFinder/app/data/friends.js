@@ -53,7 +53,7 @@ var friendsData = [
     },
     {
         "name": "Tina Tockers",
-        "photo": "http://static.oprah.com/2015/09/201510-omag-annoyed-woman-949x534.jpg",
+        "photo": "http://static.oprah.com/2015/09/201510-omag-annoyed-woman-900x500.jpg",
         "scores": [
             "5",
             "5",
