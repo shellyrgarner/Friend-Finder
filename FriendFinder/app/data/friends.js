@@ -2,7 +2,7 @@
 var friendsData = [
     {
         "name": "Jolly Test",
-        "photo": "https://goo.gl/images/EXddA1",
+        "photo": "https://assets.wordpress.envato-static.com/uploads/2017/08/tropical-PS53BSA.jpg",
         "scores": [
             "5",
             "1",
@@ -19,7 +19,7 @@ var friendsData = [
     },
     {
         "name": "Judy Blue",
-        "photo": "https://goo.gl/images/peLir4",
+        "photo": "https://www.eff.org/files/banner_library/free-speech-cat4_0.jpg",
         "scores": [
             "2",
             "2",
@@ -36,7 +36,7 @@ var friendsData = [
     },
     {
         "name": "Pop Hoppers",
-        "photo": "https://goo.gl/images/C3oqtY",
+        "photo": "http://steelandrocks.com/wp-content/uploads/2018/05/cartoon-characters-free-7.jpg",
         "scores": [
             "1",
             "2",
@@ -53,7 +53,7 @@ var friendsData = [
     },
     {
         "name": "Tina Tockers",
-        "photo": "https://goo.gl/images/paqY1E",
+        "photo": "http://static.oprah.com/2015/09/201510-omag-annoyed-woman-949x534.jpg",
         "scores": [
             "5",
             "5",
@@ -70,7 +70,7 @@ var friendsData = [
     },
     {
         "name": "Rocket",
-        "photo": "https://goo.gl/images/6h25bN",
+        "photo": "https://vignette.wikia.nocookie.net/goanimate-v3/images/1/15/GOTG2_-_Rocket_Raccoon.png/revision/latest?cb=20180603201051",
         "scores": [
             "1",
             "3",
