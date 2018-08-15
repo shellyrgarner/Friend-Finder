@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "8.11.2",
+    "npm": "6.3.0"
+  },
   "dependencies": {
     "express": "^4.16.3"
   },
